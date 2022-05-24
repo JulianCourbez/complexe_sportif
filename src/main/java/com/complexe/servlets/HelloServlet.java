@@ -24,7 +24,7 @@ public class HelloServlet extends HttpServlet
     {
         EntityManagerFactory emf  = Persistence.createEntityManagerFactory("complexe_PU");
         response.getWriter().append("Served at: ").append(request.getContextPath());
-        response.getWriter().append("Connexion: ").append(emf.toString());
+        response.getWriter().append(" Connexion: ").append(emf.toString());
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException

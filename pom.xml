@@ -16,6 +16,28 @@
         <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
     <dependencies>
+        <!--     Dépendance vers Mojarra :
+  l’implémentation de référence de JSF 2.2 -->
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.faces</artifactId>
+            <version>2.2.14</version>
+        </dependency>
+        <!--     Dépendance vers la librairie JSTL -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!--     Dépendance vers Hibernate Validator :
+            l’implémentation de référence
+            de Bean Validation 1.1 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.3.4.Final</version>
+        </dependency>
+
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
